@@ -2,48 +2,50 @@
 
 ## Overview
 
-Syslog provides centralized logging for network devices, firewalls, servers, and security platforms.
+Syslog provides centralized logging for network devices, enabling operations teams to monitor events, troubleshoot issues, and maintain audit trails.
 
-## Key Benefits
+## Syslog Severity Levels
 
-- Centralized log collection
-- Faster troubleshooting
-- Security event visibility
+- 0 – Emergency
+- 1 – Alert
+- 2 – Critical
+- 3 – Error
+- 4 – Warning
+- 5 – Notification
+- 6 – Informational
+- 7 – Debug
+
+## Benefits
+
+- Centralized event collection
+- Faster incident response
+- Historical log analysis
+- Security auditing
 - Compliance reporting
-- Operational monitoring
 
-## Recommended Log Levels
+## Recommended Log Sources
 
-0 - Emergency
-1 - Alert
-2 - Critical
-3 - Error
-4 - Warning
-5 - Notification
-6 - Informational
-7 - Debug
-
-## Monitoring Workflow
-
-1. Configure Syslog servers
-2. Enable logging on devices
-3. Forward logs securely
-4. Create alerts for critical events
-5. Review dashboards regularly
-
-## Common Events to Monitor
-
-- Interface up/down
-- BGP neighbor changes
-- OSPF adjacency changes
-- Firewall deny events
-- VPN tunnel status
-- Authentication failures
+- Routers
+- Switches
+- Firewalls
+- Wireless Controllers
+- Load Balancers
+- VPN Gateways
 
 ## Best Practices
 
-- Synchronize devices with NTP
-- Retain logs according to policy
-- Integrate Syslog with SIEM
-- Filter unnecessary debug logs
-- Validate log delivery regularly
+- Synchronize device clocks using NTP.
+- Forward logs to redundant Syslog servers.
+- Filter unnecessary debug logs in production.
+- Define log retention policies.
+- Integrate Syslog with SIEM platforms.
+- Regularly review critical and error events.
+
+## Common Troubleshooting Steps
+
+1. Verify Syslog server reachability.
+2. Confirm logging is enabled on the device.
+3. Validate the configured Syslog severity level.
+4. Check firewall rules for Syslog traffic.
+5. Review server storage capacity.
+6. Confirm timestamps are accurate.
