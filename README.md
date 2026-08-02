@@ -33,3 +33,16 @@ Monitoring, observability, and performance management documentation for enterpri
 - Capacity Planning
 - Performance Baselining
 - Operational Best Practices
+
+## Monitoring Protocols
+
+- SNMP v2
+- SNMP v3
+- NetFlow
+- sFlow
+- IPFIX
+- Syslog
+- Streaming Telemetry
+- ICMP Monitoring
+- API-Based Monitoring
+- Performance Baselines
